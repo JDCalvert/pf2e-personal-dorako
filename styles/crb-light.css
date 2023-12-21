@@ -1,0 +1,42 @@
+[data-theme^=crb][data-color-scheme=light] {
+    --window-app-border-width: 0px;
+    --window-app-border-color: rgba(0, 0, 0, 0);
+}
+
+[data-theme^=crb].app.window-app {
+    outline: 0px;
+    border-radius: 5px;
+}
+
+[data-theme^=crb][data-color-scheme=light].window-app {
+    background: none;
+    box-shadow: var(--glassy), 0px 10px 30px 10px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme^=crb][data-color-scheme=light].window-app .window-content {
+    background-image: url(../../pf2e-dorako-ui/img/background-light.webp) !important;
+    background-size: cover !important;
+    box-shadow: 0 0 0 1px #966d58 inset, 0 0 0 2px #e9d7a1 inset;
+}
+
+[data-theme^=crb][data-color-scheme=light].window-app .window-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(20, 20, 20, 0.6);
+    color: #F0F0E0 !important;
+    flex: 0 0 30px;
+    overflow: hidden;
+    padding: 0 8px;
+    line-height: 30px;
+}
+
+[data-theme][data-dorako-ui-scope=limited]:not([data-theme-color]).sheet.actor.window-app.character .window-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(20, 20, 20, 0.6);
+    color: #F0F0E0 !important;
+    flex: 0 0 30px;
+    overflow: hidden;
+    padding: 0 8px;
+    line-height: 30px;
+}
